@@ -8,7 +8,6 @@
   "parameters": {
     "location": {
       "type": "string",
-      "minLength": 1,
       "defaultValue": "[resourceGroup().location]",
       "metadata": {
         "description": "Not used, but needed to pass arm-ttk test `Location-Should-Not-Be-Hardcoded`.  We instead use the `workspace-location` which is derived from the LA workspace"
@@ -2379,7 +2378,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "AbnormalSecurity data connector with template version 3.1.0",
+        "description": "AbnormalSecurity data connector with template version 3.1.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('dataConnectorVersion2')]",
